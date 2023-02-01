@@ -4,12 +4,12 @@
 
 
   <!-- Replaces userName with user's input from previous page-->
-  <p class="Nameheader">Hey <%=userName%>,</p>
+  <p class="Nameheader animate blur delay-1">Hey <%=userName%>,</p>
 
-  <p class="greet">Thank you for checking out my To-do List Web App.</p>
-  <p class="instruction"><em><u>Instruction:</u>To make use of the list, click on the 'New item' and input your task, then click on the add button. You can check off task by clicking on the checkbox just before the task and it will automatically rule out the task.</em></p>
+  <p class="greet animate blur delay-2">Thank you for checking out my To-do List Web App.</p>
+  <p class="instruction animate blur delay-3"><em><u>Instruction:</u>To make use of the list, click on the 'New item' and input your task, then click on the add button. You can check off task by clicking on the checkbox just before the task and it will automatically rule out the task.</em></p>
 
-  <div class="box heading">
+  <div class="box heading animate blur delay-4">
     <p><%= ejsDay %></p>
   </div>
 
@@ -18,7 +18,7 @@
     <% for (let i=0; i<listItems.length; i++) { %>
       <div class="item">
         <input type="checkbox">
-        <p class="list"><%= listItems[i] %></p>
+        <p class="list animate blur delay-5"><%= listItems[i] %></p>
       </div>
     <% } %>
 
@@ -29,8 +29,8 @@
 
   </div>
 
-  <p class="threat">And may the spirit of the evil Chicken never leave you until you accomplish these tasks.</p>
-  <p class="threat">Just kidding 😄</p>
+  <p class="threat animate blur delay-6">And may the spirit of the evil Chicken never leave you until you accomplish these tasks.</p>
+  <p class="threat animate blur delay-6">Just kidding 😄</p>
 
 <!-- Pulls up the footer ejs file and renders it in sync -->
 <%- include("footer"); -%>

@@ -158,3 +158,71 @@ input[type="text"]:focus {
   font-size: 15px;
   width: 200px;
 }
+
+
+/* CSS Animations */
+
+.animate {
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+
+.blur {
+  animation-name: animate-blur;
+  animation-timing-function: ease;
+}
+
+.glow {
+  animation-name: animate-glow;
+  animation-timing-function: ease;
+}
+
+@keyframes animate-glow {
+  0% {
+    opacity: 0;
+    filter: brightness(3) saturate(3);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1) saturate(1);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes animate-blur {
+  0% {
+    opacity: 0;
+    filter: blur(15px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.delay-1 {
+  animation-delay: 0.6s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 1.4s;
+}
+
+.delay-4 {
+  animation-delay: 1.8s;
+}
+
+.delay-5 {
+  animation-delay: 2.2s;
+}
+
+.delay-6 {
+  animation-delay: 2.6s;
+}
