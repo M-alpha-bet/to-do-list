@@ -1,7 +1,7 @@
 body {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #F1F6F5 50%);
-  min-height: 500px;
+  min-height: 1000px;
   font-family: 'Kanit', sans-serif;
   text-align: center;
 }
@@ -23,7 +23,7 @@ body {
 .greet {
   color: #A683E3;
   font-size: 1.2rem;
-  margin: -10px 0 40px;
+  margin: -10px 15px 40px;
 }
 
 .instruction {
@@ -33,7 +33,8 @@ body {
 
 .threat {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin: 0 15px;
 }
 
 .Nameheader {
@@ -209,20 +210,4 @@ input[type="text"]:focus {
 
 .delay-2 {
   animation-delay: 1s;
-}
-
-.delay-3 {
-  animation-delay: 1.4s;
-}
-
-.delay-4 {
-  animation-delay: 1.8s;
-}
-
-.delay-5 {
-  animation-delay: 2.2s;
-}
-
-.delay-6 {
-  animation-delay: 2.6s;
 }
